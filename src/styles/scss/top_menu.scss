@@ -1,0 +1,76 @@
+.topMenu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #026aa7;
+
+  &__topLeftMenu,
+  &__topRightMenu,
+  &__logo {
+    box-sizing: border-box;
+    padding: 4px;
+    height: 40px;
+  }
+}
+
+.topLeftMenu,
+.topRightMenu {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+
+  &__btn {
+    min-width: 32px;
+    margin-right: 4px;
+    border-radius: 3px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    background-color: hsla(0,0%,100%,.3);
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+
+    transition: 100ms, ease;
+
+    &:hover {
+      background-color: hsla(0,0%,100%,.2);
+    }
+
+    &--searchInput {
+      padding-left: 5px;
+      background-color: transparent;
+      border-radius: 3px;
+      border: none;
+
+      box-sizing: border-box;
+      color: hsla(0,0%,100%,.5);
+      font-size: 13px;
+      line-height: 30px;
+      outline: none;
+      transition: width .15s;
+      width: 180px;
+
+      &:focus {
+        width: 380px;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    &--boardsLink {
+      &:after {
+        content: 'Доски';
+        margin: 0 4px;
+      }
+    }
+  }
+}

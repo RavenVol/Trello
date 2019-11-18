@@ -1,0 +1,46 @@
+.projectsWindow {
+  width: 75vw;
+  margin: 50px auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+  justify-content: center;
+  align-items: start;
+}
+
+.project {
+  min-height: 100px;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background-color: darkcyan;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 200ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--new {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__title {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+
+
+

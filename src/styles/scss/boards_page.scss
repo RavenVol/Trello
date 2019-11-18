@@ -1,0 +1,102 @@
+.boardsWindow {
+  margin: 50px auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &__header {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+
+  &__boards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 25vw;
+  min-height: 100px;
+  margin-right: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background-color: khaki;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 200ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--new {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__title {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+  }
+
+  &__taskWindow {
+
+  }
+
+  &__newtask {
+    justify-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    padding: 0 5px;
+    text-align: right;
+  }
+}
+
+.taskWindow {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5px 0;
+
+  &__task {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    &--complete {
+      border: 1px solid #28ac28;
+    }
+  }
+}
+
+.task {
+
+  &__title {
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+

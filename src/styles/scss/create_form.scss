@@ -1,0 +1,22 @@
+.projectTitleInput,
+.boardTitleInput,
+.taskTitleInput,
+.taskDescriptionInput {
+  margin-top: 5px;
+  width: 25vw;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+
+  font-size: 14px;
+}
+
+.projectTitleLength,
+.boardTitleLength,
+.taskTitleLength,
+.taskDescriptionLength {
+  font-size: 10px;
+  color: #333;
+  text-align: right;
+}

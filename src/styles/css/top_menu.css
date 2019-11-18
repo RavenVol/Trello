@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.topMenu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #026aa7;
+}
+.topMenu__topLeftMenu, .topMenu__topRightMenu, .topMenu__logo {
+  box-sizing: border-box;
+  padding: 4px;
+  height: 40px;
+}
+
+.topLeftMenu,
+.topRightMenu {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+.topLeftMenu__btn,
+.topRightMenu__btn {
+  min-width: 32px;
+  margin-right: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  transition: 100ms, ease;
+}
+.topLeftMenu__btn:hover,
+.topRightMenu__btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.topLeftMenu__btn--searchInput,
+.topRightMenu__btn--searchInput {
+  padding-left: 5px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: none;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  line-height: 30px;
+  outline: none;
+  transition: width 0.15s;
+  width: 180px;
+}
+.topLeftMenu__btn--searchInput:focus,
+.topRightMenu__btn--searchInput:focus {
+  width: 380px;
+  background-color: #fff;
+  color: #000;
+}
+.topLeftMenu__btn--boardsLink:after,
+.topRightMenu__btn--boardsLink:after {
+  content: "Доски";
+  margin: 0 4px;
+}
+
+/*# sourceMappingURL=top_menu.css.map */
